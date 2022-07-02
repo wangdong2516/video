@@ -4,8 +4,19 @@ version = "0.1.0"
 description = ""
 authors = ["wangdong <dong.wang3@bluefocus.com>"]
 
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
 [tool.poetry.dependencies]
 python = "^3.8"
+fastapi = "^0.78.0"
+uvicorn = {extras = ["standard"], version = "^0.18.2"}
+motor = "^3.0.0"
+mycli = "^1.25.0"
+aiomysql = "^0.1.1"
+ipython = "^8.4.0"
+tortoise-orm = "^0.19.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
